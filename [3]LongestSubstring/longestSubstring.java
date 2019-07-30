@@ -14,7 +14,6 @@ public class longestSubstring {
 
             longestLength = Math.max(longestLength, right-left+1);
             map.put(s.charAt(right), right);
-
         }
         return longestLength;
     }
