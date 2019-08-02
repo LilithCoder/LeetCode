@@ -2,15 +2,12 @@ import java.util.Stack;
 
 public class Stack_Method {
 
-    public int trap(int[] height) {
+    public static int trap(int[] height) {
         Stack<Integer> stack = new Stack<>();
         int res = 0;
         int currentIndex = 0;
         while (currentIndex < height.length) {
-
-            //make sure the stack is not empty since there might the boundary case
-            //where height decrease, store the index inside the stack
-            //otherwise not
+            
             while(!stack.isEmpty() && height[currentIndex] > height[stack.peek()]) {
                 int top = stack.pop();
                 if(stack.isEmpty()) break;
@@ -23,5 +20,10 @@ public class Stack_Method {
             currentIndex++;
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        int[] test = {2,1,0,0,2,3};
+        System.out.println(trap(test));
     }
 }
