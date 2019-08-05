@@ -7,7 +7,7 @@ public class Stack_Method {
         int res = 0;
         int currentIndex = 0;
         while (currentIndex < height.length) {
-            
+
             while(!stack.isEmpty() && height[currentIndex] > height[stack.peek()]) {
                 int top = stack.pop();
                 if(stack.isEmpty()) break;
