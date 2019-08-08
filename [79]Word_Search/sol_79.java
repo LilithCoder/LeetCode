@@ -26,6 +26,10 @@ public class sol_79 {
             return true;
         }
 
+        if (i < 0 || i >= board.length || j < 0 || j >=board[i].length || board[i][j] != word.charAt(index)) {
+            return false;
+        }
+
         //store the board elements temporarily
         char temp = board[i][j];
         board[i][j] = ' ';
