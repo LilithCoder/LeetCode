@@ -38,7 +38,7 @@ import java.util.*;
 
 public class sol_127 {
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        
+
         // add all words from wordList into dict in order to use contains() method
         Set<String> dict = new HashSet<>();
         for (String word : wordList) {
