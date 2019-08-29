@@ -17,6 +17,7 @@ public class sol_136 {
         return -1;
     }
     /**
+     * Exclusive OR
      * use bitwise XOR to solve this problem
      * bitwise XOR in java
      *
