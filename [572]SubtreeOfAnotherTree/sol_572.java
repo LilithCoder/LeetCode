@@ -16,6 +16,6 @@ public class sol_572 {
         if (s == null && t == null) return true;
         if (s == null || t == null) return false;
         if (s.val != t.val) return false;
-        return isSameTree(s.right, t.right) || isSameTree(s.left, t.left);
+        return isSameTree(s.right, t.right) && isSameTree(s.left, t.left);
     }
 }
