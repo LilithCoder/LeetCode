@@ -15,6 +15,7 @@ public class sol_1167 {
             minHeap.add(sum);
             result += sum;
         }
+        
         return result;
     }
 }
